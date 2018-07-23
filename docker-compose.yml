@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  mongo:
+    image: mongo:3.6.5 
+    ports:
+      - 27017:27017
+    volumes:
+      - flowers-mongo-data:/data/db
+volumes:
+  flowers-mongo-data:
